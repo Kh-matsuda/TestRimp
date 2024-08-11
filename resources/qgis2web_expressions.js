@@ -766,7 +766,46 @@ function fnc_project_color(values, context) {
 
 
 
-function exp_LTC_StationTMTCcopy_3rule0_eval_expression(context) {
+function exp_34All_NEW_Offtake_4rule0_eval_expression(context) {
+    // Package = 'LSS-01' OR Package = 'LSS-07'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.get('Package')  == 'LSS-01') || (feature.get('Package')  == 'LSS-07'));
+    } else {
+        return ((feature.get('Package')  == 'LSS-01') || (feature.get('Package')  == 'LSS-07'));
+    }
+}
+
+
+function exp_34All_NEW_Offtake_4rule1_eval_expression(context) {
+    // Package ILIKE 'LMS%' AND X > 0
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((feature.get('Package').toLowerCase().indexOf('LMS'.toLowerCase()) > -1) && (feature.get('X')  > 0));
+    } else {
+        return ((feature.get('Package').toLowerCase().indexOf('LMS'.toLowerCase()) > -1) && (feature.get('X')  > 0));
+    }
+}
+
+
+function exp_34All_NEW_Offtake_4rule2_eval_expression(context) {
+    // Source = 'LSS-02 Asset file' OR Source = 'LSS-03 Asset file' OR Source = 'LSS-04 Asset file' OR Source = 'LSS-05 Asset file' OR Source = 'LSS-06 Asset file' OR Source = 'LSS-08 Asset file'
+
+    var feature = context.feature;
+    
+    if (feature.properties) {
+        return ((((((feature.get('Source')  == 'LSS-02 Asset file') || (feature.get('Source')  == 'LSS-03 Asset file')) || (feature.get('Source')  == 'LSS-04 Asset file')) || (feature.get('Source')  == 'LSS-05 Asset file')) || (feature.get('Source')  == 'LSS-06 Asset file')) || (feature.get('Source')  == 'LSS-08 Asset file'));
+    } else {
+        return ((((((feature.get('Source')  == 'LSS-02 Asset file') || (feature.get('Source')  == 'LSS-03 Asset file')) || (feature.get('Source')  == 'LSS-04 Asset file')) || (feature.get('Source')  == 'LSS-05 Asset file')) || (feature.get('Source')  == 'LSS-06 Asset file')) || (feature.get('Source')  == 'LSS-08 Asset file'));
+    }
+}
+
+
+function exp_LTC_StationTMTCcopy_5rule0_eval_expression(context) {
     // Label_Func = 'Master Station' OR Label_Func = 'TM' AND "TM_HW." IS NOT 1
 
     var feature = context.feature;
@@ -779,7 +818,7 @@ function exp_LTC_StationTMTCcopy_3rule0_eval_expression(context) {
 }
 
 
-function exp_LTC_StationTMTCcopy_3rule1_eval_expression(context) {
+function exp_LTC_StationTMTCcopy_5rule1_eval_expression(context) {
     // Controllin = 'SPC'
 
     var feature = context.feature;
@@ -792,7 +831,7 @@ function exp_LTC_StationTMTCcopy_3rule1_eval_expression(context) {
 }
 
 
-function exp_LTC_StationTMTCcopy_3rule2_eval_expression(context) {
+function exp_LTC_StationTMTCcopy_5rule2_eval_expression(context) {
     // Controllin = 'TC' OR Label_Func = 'Master Station'
 
     var feature = context.feature;
