@@ -21,7 +21,7 @@ var style_Update24081920all_canal_5 = function(feature, resolution){
         labelText = String(feature.get("Jun_26-30"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(10,77,184,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 6.08}),
+        stroke: new ol.style.Stroke({color: 'rgba(10,77,184,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 4.56}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)

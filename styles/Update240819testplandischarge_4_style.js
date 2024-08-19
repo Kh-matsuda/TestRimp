@@ -21,7 +21,7 @@ var style_Update240819testplandischarge_4 = function(feature, resolution){
         labelText = String(feature.get("Jun_26-30"));
     }
     var style = [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(114,213,144,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 7.6}),
+        stroke: new ol.style.Stroke({color: 'rgba(61,112,251,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 4.56}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
